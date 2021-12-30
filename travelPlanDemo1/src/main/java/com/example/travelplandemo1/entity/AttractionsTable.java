@@ -2,10 +2,7 @@ package com.example.travelplandemo1.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -13,13 +10,28 @@ import java.io.Serializable;
 public class AttractionsTable implements Serializable {
     private static final long serialVersionUID = 7551999649936522523L;
     @Id
-    private int id;
+    private int AttractionsTableId;
 
     private String name;
 
     private String description;
 
     private String imageUrl;
+
+    private double longitude;
+
+    private double latitude;
+
+    @ManyToOne
+    private VisitItemTable visitTable;
+
+    public VisitItemTable getVisitTable() {
+        return visitTable;
+    }
+
+    public void setVisitTable(VisitItemTable visitTable) {
+        this.visitTable = visitTable;
+    }
 
     @ManyToOne
     @JsonIgnore
@@ -34,13 +46,8 @@ public class AttractionsTable implements Serializable {
     }
     //   private String 经纬度
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public String getName() {
         return name;
@@ -64,5 +71,29 @@ public class AttractionsTable implements Serializable {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public int getAttractionsTableId() {
+        return AttractionsTableId;
+    }
+
+    public void setAttractionsTableId(int attractionsTableId) {
+        AttractionsTableId = attractionsTableId;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 }

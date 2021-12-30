@@ -21,14 +21,14 @@ public class Customer implements Serializable {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
-    private List<PlanListTable> planListTableList;
+    private List<VisitPlanTable> planListTableList;
 
 
-    public List<PlanListTable> getPlanListTableList() {
+    public List<VisitPlanTable> getPlanListTableList() {
         return planListTableList;
     }
 
-    public void setPlanListTableList(List<PlanListTable> planListTableList) {
+    public void setPlanListTableList(List<VisitPlanTable> planListTableList) {
         this.planListTableList = planListTableList;
     }
 
