@@ -17,9 +17,9 @@ public class AttractionsTable implements Serializable {
     private String description;
 
     private String imageUrl;
-
+    // 这是经度，东西经
     private double longitude;
-
+   // 这是纬度，南北纬
     private double latitude;
 
     @ManyToOne

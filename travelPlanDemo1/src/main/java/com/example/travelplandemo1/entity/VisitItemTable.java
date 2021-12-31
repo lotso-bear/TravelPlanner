@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "plannedTable")
+@Table(name = "visitItemTable")
 public class VisitItemTable implements Serializable {
     private static final long serialVersionUID = -2455760938054036364L;
     @Id
