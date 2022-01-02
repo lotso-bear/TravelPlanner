@@ -1,4 +1,4 @@
-package com.example.travelplandemo1.entity;
+package traveller.com.travelplanner.entity;
 
 
 import javax.persistence.Entity;

@@ -15,14 +15,6 @@
           <element id="module-output" name="TravelPlanner" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.4.RELEASE" />
           <element id="library" level="project" name="Maven: com.google.maps:google-maps-services:1.0.1" />
           <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:4.9.2" />
           <element id="library" level="project" name="Maven: com.squareup.okio:okio:2.8.0" />
@@ -33,6 +25,19 @@
           <element id="library" level="project" name="Maven: io.opencensus:opencensus-api:0.28.3" />
           <element id="library" level="project" name="Maven: io.grpc:grpc-context:1.27.2" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
+          <element id="library" level="project" name="Maven: org.json:json:20200518" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.7" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.9" />
@@ -56,14 +61,9 @@
           <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.15" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.18" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.9" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.3" />
-          <element id="library" level="project" name="Maven: org.json:json:20200518" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.7" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.9" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.4.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

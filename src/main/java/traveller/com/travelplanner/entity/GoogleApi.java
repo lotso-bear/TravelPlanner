@@ -17,23 +17,26 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 
 public class GoogleApi {
-    GeoApiContext context = new GeoApiContext.Builder()
-            .apiKey("AIzaSyDhub8iMmhP6KqVOujS98FXTsrVlNKdtig")
+
+    private static final String APIKEY = "AIzaSyDhub8iMmhP6KqVOujS98FXTsrVlNKdtig";
+    private GeoApiContext context = new GeoApiContext.Builder()
+            .apiKey(APIKEY)
             .build();
 
-    public void callGeoApi() throws IOException, InterruptedException, ApiException {
+    public GeocodingResult[] callGeoApi(String code) throws IOException, InterruptedException, ApiException {
 
-        GeocodingResult[] results =  GeocodingApi.geocode(context,
-                "1600 Amphitheatre Parkway Mountain View, CA 94043").await();
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        System.out.println(gson.toJson(results[0]));
+        GeocodingResult[] results =  GeocodingApi.geocode(context, code).await();
+//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//        System.out.println(gson.toJson(results[0]));
+        return results;
     }
 
     public void callPlacesApi(double latitude, double longitude) throws IOException {
         URL url = new URL("https://maps.googleapis.com/maps/api/place/textsearch/json?location="
-         + latitude + "," + longitude + "&radius=2000&region=us&type=point_of_interest&key=AIzaSyBzPa1oDc9mU2SJWAfLY92vJxwufqH1Hj8");
+         + latitude + "," + longitude + "&radius=2000&region=us&type=point_of_interest&key=" + APIKEY);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
 
@@ -49,13 +52,16 @@ public class GoogleApi {
         System.out.println(content.toString());
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException, ApiException {
         GoogleApi googleApi = new GoogleApi();
-        try {
-            googleApi.callPlacesApi(37.8199, -122.4783);
-        } catch (IOException ioe) {
-            System.out.println("Exception Occurred: " + ioe.getMessage());
-        }
+        String code = "Q254+J5";
+        GeocodingResult[] results = googleApi.callGeoApi(code);
+        System.out.println(Arrays.toString(results));
+//        try {
+//            googleApi.callPlacesApi(37.8199, -122.4783);
+//        } catch (IOException ioe) {
+//            System.out.println("Exception Occurred: " + ioe.getMessage());
+//        }
     }
 
 
