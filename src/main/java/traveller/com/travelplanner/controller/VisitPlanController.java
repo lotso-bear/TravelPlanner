@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import traveller.com.travelplanner.entity.City;
 import traveller.com.travelplanner.entity.Customer;
+import traveller.com.travelplanner.entity.VisitItem;
 import traveller.com.travelplanner.entity.VisitPlan;
 import traveller.com.travelplanner.service.VisitPlanService;
 
@@ -27,6 +28,12 @@ public class VisitPlanController {
     @ResponseBody
     public VisitPlan getVisitPlan(@PathVariable("visitPlanId") int visitPlanId) {
         return visitPlanService.getVisitPlan(visitPlanId);
+    }
+
+    @RequestMapping(value = "/shuffleVisitPlan/{visitPlanId}/{date}", method = RequestMethod.GET)
+    @ResponseBody
+    public List<VisitItem> shuffleVisitPlan(@PathVariable("visitPlanId") int visitPlanId, @PathVariable("date") String date) {
+        return visitPlanService.shuffleVisitPlan(visitPlanId, date);
     }
 
     @RequestMapping(value = "/visitPlans", method = RequestMethod.GET)

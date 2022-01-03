@@ -14,6 +14,7 @@ import traveller.com.travelplanner.entity.VisitItem;
 import traveller.com.travelplanner.entity.VisitPlan;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -30,6 +31,20 @@ public class VisitPlanService {
 
     public VisitPlan getVisitPlan(int visitPlanId) {
         return visitPlanDao.getVisitPlan(visitPlanId);
+    }
+
+    public List<VisitItem> shuffleVisitPlan(int visitPlanId, String date) {
+        VisitPlan visitPlan = visitPlanDao.getVisitPlan(visitPlanId);
+        List<VisitItem> visitItemList = visitPlan.getVisitItemList();
+        List<VisitItem> visitItems = new ArrayList<>();
+        // add visit items on that date to visitItems
+        for (VisitItem visitItem : visitItemList) {
+            if (visitItem.getDate().equals(date)) {
+                visitItems.add(visitItem);
+            }
+        }
+        Collections.shuffle(visitItems);
+        return visitItems;
     }
 
     public List<VisitPlan> getAllVisitPlans() {
