@@ -11,11 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7b3ec4cd-b8b3-4bb8-b74b-c79f0dff95bc" name="Changes" comment="minghua updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/VisitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/VisitItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitPlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitPlanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/travelplandemo1/controller/SigninController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/com/example/travelplandemo1/controller/SigninController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/controller/VisitItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/controller/VisitItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/VisitItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/VisitItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitPlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/controller/VisitItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/controller/VisitItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/entity/VisitItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/entity/VisitItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitPlanService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +233,7 @@
       <workItem from="1641153970339" duration="15388000" />
       <workItem from="1641170522058" duration="16991000" />
       <workItem from="1641192591288" duration="489000" />
-      <workItem from="1641220687065" duration="1984000" />
+      <workItem from="1641220687065" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="minghua updates">
       <created>1641139621802</created>
@@ -286,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641192914149</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="minghua updates">
+      <created>1641222859302</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641222859302</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

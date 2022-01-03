@@ -18,6 +18,7 @@ public class VisitPlanController {
     VisitPlanService visitPlanService;
 
     @RequestMapping(value = "/createVisitPlan", method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
     public VisitPlan createVisitPlan() {
         return visitPlanService.createVisitPlan();
     }
