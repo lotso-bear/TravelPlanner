@@ -24,6 +24,7 @@ public class ApplicationConfig {
         String RDS_INSTANCE = "travelplan-instance.cnu5yyq24eoc.us-east-2.rds.amazonaws.com";
         String USERNAME = "admin";
         String PASSWORD = "a8899745";
+        //这边的密码已经更新
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://" + RDS_INSTANCE + ":3306/travelplan?createDatabaseIfNotExist=true&serverTimezone=UTC");

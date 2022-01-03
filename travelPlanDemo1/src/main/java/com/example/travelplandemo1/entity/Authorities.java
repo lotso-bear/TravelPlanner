@@ -13,9 +13,10 @@ public class Authorities implements Serializable {
 
 
 
+
     @Id
     private String email;
-    
+
     private String authorities;
 
 
