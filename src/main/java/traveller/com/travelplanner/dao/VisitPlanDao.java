@@ -11,7 +11,9 @@ import traveller.com.travelplanner.service.CustomerService;
 
 import javax.persistence.criteria.Order;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public class VisitPlanDao {
@@ -56,7 +58,17 @@ public class VisitPlanDao {
         try (Session session = sessionFactory.openSession()) {
             Customer customer = session.get(Customer.class, email);
             if (customer != null) {
-                return customer.getVisitPlan();
+                List<VisitPlan> list = customer.getVisitPlan();
+                // Create a new LinkedHashSet
+                Set<VisitPlan> set = new LinkedHashSet<>();
+                // Add the elements to set
+                set.addAll(list);
+                // Clear the list
+                list.clear();
+                // add the elements of set
+                // with no duplicates to the list
+                list.addAll(set);
+                return list;
             }
         } catch (Exception ex) {
             ex.printStackTrace();
