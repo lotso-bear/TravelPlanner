@@ -24,8 +24,12 @@ public class VisitItemService {
         Attraction attractionItem = cityInfoService.getAttractionItem(attractionID);
         VisitPlan visitPlan = visitPlanService.getVisitPlan(visitPlanId);
         for (VisitItem visit : visitPlan.getVisitItemList()) {
-            if (visit.getDate().equals(date) && visit.getAttraction().getAttractionID() == attractionID) {
-                return;
+            try {
+                if (visit.getDate().equals(date) && visit.getAttraction().getAttractionID() == attractionID) {
+                    return;
+                }
+            } catch (Exception ex) {
+                continue;
             }
         }
         VisitItem visitItem = new VisitItem();
