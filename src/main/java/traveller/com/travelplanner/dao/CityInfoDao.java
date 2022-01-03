@@ -51,4 +51,28 @@ public class CityInfoDao {
         }
         return null;
     }
+
+    public Double getLongitude(int CityTableId){
+        try (Session session = sessionFactory.openSession()) {
+            City city = session.get(City.class, CityTableId);
+            if (city != null) {
+                return city.getLongitude();
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+    public Double getLatitude(int CityTableId){
+        try (Session session = sessionFactory.openSession()) {
+            City city = session.get(City.class, CityTableId);
+            if (city != null) {
+                return city.getLatitude();
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
 }

@@ -12,7 +12,6 @@ traveller\com\travelplanner\entity\GoogleApi.class
 traveller\com\travelplanner\service\CustomerService.class
 traveller\com\travelplanner\entity\Customer.class
 traveller\com\travelplanner\controller\CityInfoController.class
-traveller\com\travelplanner\controller\SigninController.class
 traveller\com\travelplanner\SecurityConfig.class
 traveller\com\travelplanner\service\CityInfoService.class
 traveller\com\travelplanner\ApplicationConfig.class

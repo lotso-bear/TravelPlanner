@@ -10,29 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3ec4cd-b8b3-4bb8-b74b-c79f0dff95bc" name="Changes" comment="minghua updates">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TravelPlanner_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TravelPlanner_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/TravelPlanner_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TravelPlanner_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TravelPlanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TravelPlanner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/GoogleApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/GoogleApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/Authorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/Authorities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/controller/SigninController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/entity/Authorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/entity/Authorities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/VisitPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/VisitPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/controller/VisitPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/dao/CityInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/dao/CityInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/CityInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/CityInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitPlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitPlanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/GoogleApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/entity/GoogleApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="235RxzqOAp9ZrgjBIe4MqnxGhhZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -91,6 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -99,7 +95,7 @@
       <recent name="traveller.com.travelplanner.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GoogleApi">
+  <component name="RunManager" selected="Tomcat Server.tom">
     <configuration name="GoogleApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="traveller.com.travelplanner.entity.GoogleApi" />
       <module name="TravelPlanner" />
@@ -124,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="tom" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.56" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="TravelPlanner:war exploded">
@@ -230,6 +226,7 @@
       <workItem from="1641151781537" duration="771000" />
       <workItem from="1641152573766" duration="1368000" />
       <workItem from="1641153970339" duration="1483000" />
+      <workItem from="1641163906801" duration="5001000" />
     </task>
     <task id="LOCAL-00001" summary="minghua updates">
       <created>1641139621802</created>
@@ -254,7 +251,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="minghua updates" />

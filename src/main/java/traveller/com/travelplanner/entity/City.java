@@ -14,6 +14,10 @@ public class City implements Serializable {
     @Id
     private int CityTableId;
 
+    private double longitude;
+
+    private double latitude;
+
 
     private String name;
 
@@ -44,6 +48,10 @@ public class City implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public double getLongitude(){return longitude;}
+
+    public double getLatitude(){return latitude;}
 
 
     public String getImageUrl() {
