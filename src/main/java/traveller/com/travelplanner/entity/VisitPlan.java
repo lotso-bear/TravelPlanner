@@ -25,7 +25,6 @@ public class VisitPlan implements Serializable {
 
     //这里是做和visits table的一对多关系
     @OneToMany(mappedBy = "visitPlan", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonIgnore
     private List<VisitItem> visitItemList;
 
     public List<VisitItem> getVisitItemList() {
@@ -35,8 +34,8 @@ public class VisitPlan implements Serializable {
     public void setVisitItemList(List<VisitItem> visitTableList) {
         this.visitItemList = visitTableList;
     }
-    //这里是和Customer 1对1的关系
-    @OneToOne
+//    //这里是和Customer 1对多的关系
+    @ManyToOne
     @JsonIgnore
     private Customer customer;
 
@@ -47,4 +46,6 @@ public class VisitPlan implements Serializable {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
+
 }

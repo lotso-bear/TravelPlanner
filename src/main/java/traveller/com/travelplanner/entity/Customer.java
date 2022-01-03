@@ -12,34 +12,24 @@ public class Customer implements Serializable {
     private static final long serialVersionUID = 2652327633296064143L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
     private String email;
     private String firstName;
     private String lastName;
     private String password;
     private boolean enabled;
 
-    @OneToOne(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonIgnore
-    private VisitPlan visitPlan;
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
+    private List<VisitPlan> visitPlan;
 
 
-    public VisitPlan getVisitPlan() {
+    public List<VisitPlan> getVisitPlan() {
         return visitPlan;
     }
 
-    public void setVisitPlan(VisitPlan visitPlan) {
+    public void setVisitPlan(List<VisitPlan> visitPlan) {
         this.visitPlan = visitPlan;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
     // getters
     public String getEmail() {
         return email;

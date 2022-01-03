@@ -1,5 +1,6 @@
 package traveller.com.travelplanner.dao;
 
+import traveller.com.travelplanner.entity.Attraction;
 import traveller.com.travelplanner.entity.Authorities;
 import traveller.com.travelplanner.entity.Customer;
 import org.hibernate.Session;
@@ -36,6 +37,11 @@ public class CustomerDao {
     }
 
     public Customer getCustomer (String email) {
-        return new Customer();
+        try (Session session = sessionFactory.openSession()) {
+            return session.get(Customer.class, email);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 }

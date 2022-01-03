@@ -12,12 +12,10 @@ public class Authorities implements Serializable {
     private static final long serialVersionUID = 8734140534986494039L;
 
 
-
     @Id
     private String email;
-    
-    private String authorities;
 
+    private String authorities;
 
 
     public String getEmail() {

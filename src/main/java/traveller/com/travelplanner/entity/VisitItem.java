@@ -50,7 +50,7 @@ public class VisitItem implements Serializable {
         return visitPlan;
     }
 
-    public void setVisitPlan(VisitPlan visitPlanTable) {
+    public void setVisitPlan(List<VisitPlan> visitPlanTable) {
         this.visitPlan = visitPlan;
     }
 }
