@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .failureForwardUrl("/login?error=true");
         http
                 .authorizeRequests()
-                .antMatchers("/cities").hasAuthority("ROLE_USER")
+                .antMatchers("/cities", "/city/*","createVisitPlan","saveVisitPlan","visitPlan/*","shuffleVisitPlan/*").hasAuthority("ROLE_USER")
                 .anyRequest().permitAll();
     }
 

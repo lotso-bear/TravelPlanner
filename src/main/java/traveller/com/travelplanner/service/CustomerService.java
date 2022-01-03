@@ -14,7 +14,6 @@ public class CustomerService {
 
     public void signUp(Customer customer) {
         customer.setEnabled(true);
-//        customer.setVisitPlan(new VisitPlan());
         customerDao.signUp(customer);
     }
 

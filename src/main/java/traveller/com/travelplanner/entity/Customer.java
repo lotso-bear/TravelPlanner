@@ -18,7 +18,7 @@ public class Customer implements Serializable {
     private String password;
     private boolean enabled;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<VisitPlan> visitPlan;
 
 
@@ -50,6 +50,7 @@ public class Customer implements Serializable {
     public boolean isEnabled() {
         return enabled;
     }
+
     // setters
     public void setEmail(String email) {
         this.email = email;

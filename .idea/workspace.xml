@@ -11,9 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b3ec4cd-b8b3-4bb8-b74b-c79f0dff95bc" name="Changes" comment="minghua updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/VisitItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TravelPlanner-1.0-SNAPSHOT/WEB-INF/classes/traveller/com/travelplanner/service/VisitItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/traveller/com/travelplanner/service/VisitItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/traveller/com/travelplanner/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +226,7 @@
       <workItem from="1641153970339" duration="15388000" />
       <workItem from="1641170522058" duration="16991000" />
       <workItem from="1641192591288" duration="489000" />
-      <workItem from="1641220687065" duration="13273000" />
+      <workItem from="1641220687065" duration="15139000" />
     </task>
     <task id="LOCAL-00001" summary="minghua updates">
       <created>1641139621802</created>
@@ -326,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641237145450</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="minghua updates">
+      <created>1641242724029</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641242724029</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
