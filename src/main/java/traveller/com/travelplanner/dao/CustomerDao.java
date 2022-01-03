@@ -36,6 +36,20 @@ public class CustomerDao {
     }
 
     public Customer getCustomer (String email) {
-        return new Customer();
+        Customer customer = null;
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            customer = session.get(Customer.class, email); //去customer表里面搜有没有email
+            //transaction用于多线程，一般是写操作用的多一些。
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        //JAVA 8之后有个特性可以自动close
+        return customer;
     }
 }
