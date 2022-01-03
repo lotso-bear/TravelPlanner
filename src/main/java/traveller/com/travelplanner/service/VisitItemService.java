@@ -21,9 +21,14 @@ public class VisitItemService {
     private VisitItemDao visitItemDao;
 
     public void saveVisitItem(int visitPlanId, int attractionID, String date) {
-        VisitItem visitItem = new VisitItem();
         Attraction attractionItem = cityInfoService.getAttractionItem(attractionID);
         VisitPlan visitPlan = visitPlanService.getVisitPlan(visitPlanId);
+        for (VisitItem visit : visitPlan.getVisitItemList()) {
+            if (visit.getDate().equals(date) && visit.getAttraction().getAttractionID() == attractionID) {
+                return;
+            }
+        }
+        VisitItem visitItem = new VisitItem();
         visitItem.setAttraction(attractionItem);
         visitItem.setVisitPlan(visitPlan);
         visitItem.setDate(date);
