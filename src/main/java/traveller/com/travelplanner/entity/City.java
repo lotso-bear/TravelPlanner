@@ -15,6 +15,10 @@ public class City implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int CityTableId;
 
+    private double longitude;
+
+    private double latitude;
+
 
     private String name;
     private String lat;
@@ -48,6 +52,10 @@ public class City implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public double getLongitude(){return longitude;}
+
+    public double getLatitude(){return latitude;}
 
 
     public String getImageUrl() {

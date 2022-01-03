@@ -22,6 +22,14 @@ public class CityInfoService {
         return cityInfoDao.getAllAttractionItem(CityTableId);
     }
 
+    public double getLongitude(int CityTableId){
+        return cityInfoDao.getLongitude(CityTableId);
+    }
+
+    public double getLatitude(int CityTableId){
+        return cityInfoDao.getLatitude(CityTableId);
+    }
+
     public Attraction getAttractionItem(int id) {
         return cityInfoDao.getAttractionItem(id);
     }
