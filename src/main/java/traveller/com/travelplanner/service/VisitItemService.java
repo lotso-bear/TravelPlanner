@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import traveller.com.travelplanner.entity.Attraction;
 import traveller.com.travelplanner.entity.Customer;
 import traveller.com.travelplanner.entity.VisitItem;
+import traveller.com.travelplanner.entity.VisitPlan;
 
 @Service
 public class VisitItemService {
@@ -14,22 +15,18 @@ public class VisitItemService {
     private CityInfoService cityInfoService;
 
     @Autowired
-    private CustomerService customerService;
+    private VisitPlanService visitPlanService;
 
     @Autowired
     private VisitItemDao visitItemDao;
 
-    public void saveVisitItem(int attractionID) {
+    public void saveVisitItem(int visitPlanId, int attractionID, String date) {
         VisitItem visitItem = new VisitItem();
         Attraction attractionItem = cityInfoService.getAttractionItem(attractionID);
-
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String email = authentication.getName();
-        Customer customer = customerService.getCustomer(email);
-
+        VisitPlan visitPlan = visitPlanService.getVisitPlan(visitPlanId);
         visitItem.setAttraction(attractionItem);
-        visitItem.setVisitPlan(customer.getVisitPlan());
-
+        visitItem.setVisitPlan(visitPlan);
+        visitItem.setDate(date);
         visitItemDao.save(visitItem);
     }
 }

@@ -14,9 +14,9 @@ public class VisitItemController {
     @Autowired
     private VisitItemService visitItemService;
 
-    @RequestMapping(value = "/visit/{attractionId}", method = RequestMethod.POST)
+    @RequestMapping(value = "/visit/{visitPlanId}/{attractionId}/{date}", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public void addVisitItemToPlan(@PathVariable("attractionId") int attractionId) {
-        visitItemService.saveVisitItem(attractionId);
+    public void addVisitItemToPlan(@PathVariable("visitPlanId") int visitPlanId, @PathVariable("attractionId") int attractionId, String date) {
+        visitItemService.saveVisitItem(visitPlanId, attractionId, date);
     }
 }

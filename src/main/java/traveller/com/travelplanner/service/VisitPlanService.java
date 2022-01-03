@@ -52,7 +52,7 @@ public class VisitPlanService {
     public void saveVisitPlan(VisitPlan visitPlan) {
         List<VisitItem> visitItemList = visitPlan.getVisitItemList();
         for (VisitItem visitItem : visitItemList) {
-            visitItemService.saveVisitItem(visitItem.getAttraction().getAttractionID());
+            visitItemService.saveVisitItem(visitPlan.getVisitPlanId(), visitItem.getAttraction().getAttractionID(), visitItem.getDate());
         }
     }
 
