@@ -17,9 +17,9 @@ public class CityInfoController {
     @Autowired
     private CityInfoService cityInfoService;
 
-    @RequestMapping(value = "/city/{CityTableId}/menu", method = RequestMethod.GET)
+    @RequestMapping(value = "/city/{CityTableId}", method = RequestMethod.GET)
     @ResponseBody
-    public List<Attraction> getMenus(@PathVariable("CityTableId") int CityTableId) {
+    public List<Attraction> getAttractions(@PathVariable("CityTableId") int CityTableId) {
         return cityInfoService.getAllAttractionItem(CityTableId);
     }
 

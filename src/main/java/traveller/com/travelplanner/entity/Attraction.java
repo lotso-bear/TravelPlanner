@@ -19,19 +19,8 @@ public class Attraction implements Serializable {
     private String imageUrl;
     // 这是经度，东西经
     private double longitude;
-   // 这是纬度，南北纬
+    // 这是纬度，南北纬
     private double latitude;
-
-    @ManyToOne
-    private VisitItem visit;
-
-    public VisitItem getVisit() {
-        return visit;
-    }
-
-    public void setVisit(VisitItem visit) {
-        this.visit = visit;
-    }
 
     @ManyToOne
     @JsonIgnore
@@ -45,8 +34,6 @@ public class Attraction implements Serializable {
         this.city = city;
     }
     //   private String 经纬度
-
-
 
 
     public String getName() {

@@ -15,17 +15,9 @@ public class VisitItem implements Serializable {
     private int visitItemId;
 
     private String date;
-    // 这里是做和attraction的一对一关系
-    @OneToMany
-    private List<Attraction> attractionList;
-
-    public List<Attraction> getAttractionList() {
-        return attractionList;
-    }
-
-    public void setAttractionsTableList(List<Attraction> attractionsTableList) {
-        this.attractionList = attractionsTableList;
-    }
+    // 这里是做和attraction的多对一关系
+    @ManyToOne
+    private Attraction attraction;
 
     public int getVisitItemId() {
         return visitItemId;
@@ -37,6 +29,13 @@ public class VisitItem implements Serializable {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public void setAttraction(Attraction attraction) {
+        this.attraction = attraction;
+    }
+    public Attraction getAttraction() {
+        return attraction;
     }
 
     public String getDate() {

@@ -12,11 +12,14 @@ public class City implements Serializable {
     private static final long serialVersionUID = 2455760938054036111L;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int CityTableId;
 
 
     private String name;
-
+    private String lat;
+    private String lng;
+    private String state;
 
     private String imageUrl;
     @OneToMany(mappedBy = "city", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -29,6 +32,7 @@ public class City implements Serializable {
     public void setAttractionsTableList(List<Attraction> attractionsTableList) {
         this.attractionList = attractionsTableList;
     }
+
     public int getCityTableId() {
         return CityTableId;
     }
@@ -54,4 +58,27 @@ public class City implements Serializable {
         this.imageUrl = imageUrl;
     }
 
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 }
