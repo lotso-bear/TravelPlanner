@@ -53,13 +53,14 @@ public class VisitPlanService {
         return visitPlanDao.getAllVisitPlans(email);
     }
 
-    public VisitPlan createVisitPlan() {
+    public VisitPlan createVisitPlan(String city) {
         VisitPlan visitPlan = new VisitPlan();
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String email = authentication.getName();
         Customer customer = customerService.getCustomer(email);
         visitPlan.setCustomer(customer);
+        visitPlan.setCity(city);
         visitPlanDao.createVisitPlan(visitPlan);
         return visitPlan;
     }

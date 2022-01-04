@@ -18,10 +18,10 @@ public class VisitPlanController {
     @Autowired
     VisitPlanService visitPlanService;
 
-    @RequestMapping(value = "/createVisitPlan", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/createVisitPlan/{city}", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public VisitPlan createVisitPlan() {
-        return visitPlanService.createVisitPlan();
+    public VisitPlan createVisitPlan(@PathVariable("city") String city) {
+        return visitPlanService.createVisitPlan(city);
     }
 
     @RequestMapping(value = "/visitPlan/{visitPlanId}", method = RequestMethod.GET)

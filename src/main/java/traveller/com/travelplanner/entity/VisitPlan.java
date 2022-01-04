@@ -15,6 +15,11 @@ public class VisitPlan implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int visitPlanId;
 
+    private String city;
+
+    public void setCity(String city) {this.city = city;}
+    public String getCity() {return city;}
+
     public int getVisitPlanId() {
         return visitPlanId;
     }
